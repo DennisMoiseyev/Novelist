@@ -1,0 +1,13 @@
+title = "Test: Exclusive"
+
+introduction = "In this test story, the player must make a choice between two alternatives. Chosing one eliminates the other. The story has two possible ends."
+
+[storylets.cake]
+name = "Cake"
+description = "Twas the Cake of Immortality. Death is of no concern now. (one story path ends here)"
+conflicts = "death"
+
+[storylets.death]
+name = "Death"
+description = "You can't very well have cake when you're dead, right? (one story path ends here)"
+conflicts = "cake"

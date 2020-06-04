@@ -1,0 +1,194 @@
+title = "The Novelist"
+
+introduction = ["Being a novelist is something that you always saw for yourself. Your head is filled with
+stories that are trying to escape onto paper, but you never allowed yourself a chance to make them reality.
+College has been ruthless in keeping you busy and taking away from your storytelling. You're a game design
+major, but all you have experienced so far are demanding programming classes and meticulous math classes that
+make life seem far less enjoyable. Your aspiration is to be a writer in the games industry, strictly working on 
+narrative design. The programming and all else be damned.", 
+"Now, it's summer and you find yourself home alone with a room of one's own. Perhaps, now might be the perfect
+moment to sit down and write your debut novel, which could possibly become your magnum opus. Before you can proceed, 
+you first need to decide which genre of literature you want to be known for as a novelist."]
+
+[storylets.horror]
+name = "Horror"
+description = ["Heavily inspired by Stephen King, for you've read approximately eighteen
+of his works, you decide to compose your own horror novel as a worthy homage to Maine's
+King of Horror. Although, you don't necessarily want to copy his exact style. Rather, your work must be something
+original, but not anything so disturbingly vile that will turn your readers away.","Stephen King
+has explored many themes across all of his written works. A possessed hotel, an ancient being taking on
+the form of a ravenous performance clown, an interdimensional car, a rabid dog, a crazed murderous fan, vampires, 
+and dystopian horror stories are merely the tip of the iceberg.", "However, you want to stick to a distinct horror
+theme throughout the book. Which do you choose to go with?"]
+conflicts = [["romance"],["science-fiction"]]
+
+[storylets.romance]
+name = "Romance"
+description = ["Romance. Your mother's favorite genre to read. You wish to make her proud and write something that she
+would indulge in reading. However, it should be a romance story that you'd be comfortable with your mom proof-reading,
+therefore it must steer clear of any erotic content such as that in <i>50 Shades of Grey</i>.","You are torn between the idea of writing
+a story that is more of a romantic comedy and one that blends the genres of fantasy and romance together. Yet, you
+have to stick to one."]
+conflicts=[["horror"],["science-fiction"]]
+
+[storylets.science-fiction]
+name= "Science Fiction"
+description= ["Inspired by writers such as Michael Crichton and George R.R. Martin, you decide
+to crack your own attempt at a science fiction novel. You finished the entire <i>A Song of Ice and Fire</i> series
+by the time you graduated middle school. Novels like <i>The Sphere</i> and <i>Jurassic Park</i> also serve as heavy
+influences. You also feel inspired by movies such as James Cameron's <i>The Abyss</i> and Ridley Scott's <i>Alien</i>
+film franchise.", "You aim to create a novel that will be the perfect mix of alien lifeforms and underwater
+exploration."]
+conflicts= [["horror"], ["romance"]]
+
+[storylets.gore]
+name= "A gory tale"
+requires= "horror"
+description = ["You wish to create a horror tale unlike any other that you've seen and read.
+You want it to be edgier and filled with more gore than can be usually witnessed in a standard R-rated
+horror film. You title the novel: <i>Portrait of a Psychopath<i>.", "The plot will take the reader through
+many different time periods. The prologue in the 1970's will introduce a wealthy record executive who will spend
+an evening with a sex worker that will later become pregnant with his child. The man will soon also learn that he contracted
+HIV from the prostitute and raise the son on his own. On his deathbed, he would tell his son to rid society of 
+women such as those who wronged him and made him pay with his life.", "The son grows up to be an owner of an art 
+gallery, having successfully graduated from NYU. His art, however, comes with one caveat. It's created
+from the body parts of the prostitutes he's killed. It will be written in the first person point of view 
+and will be a character study following an artist who literally kills for his art.", "With this grotesque idea
+fresh in your mind, you imminently begin typing out the story."] #fail pathway
+conflicts= "psychological"
+
+[storylets.psychological]
+name= "Psychological horror"
+requires= "horror"
+description= ["This is a more deeply personal story that you want to write. You recently lost your father
+and are still having a difficult time coping with the loss. Your father's favorite genre of movies was horror,
+psychological horror in particular. You wish to create a novel based on your experiences with grief and honor your
+father with a psychological horror novel of your own. You decide that it will be respectfully titled:
+<i>A Father's Signs<i>.","The main protagonist will be yourself portrayed as a fictional character. The
+relationships and scenarios that unfold in the story will very much pertain to your personal life following the
+loss of your father. The first part of the novel will recount your relationship with your father leading up to the 
+sudden loss. And the rest of the story will write itself eventually. There is no clear ending in mind yet."] #success pathway
+conflicts= "gore"
+
+[storylets.goretwo]
+name= "Begin the writing process"
+description= ["It's quite early into the novel and you've already described the first
+murder, refusing to leave out any gory detail. You pause and read back what you just wrote. The scene is of the
+main protagonist horrifically mutilating a female body and creating an oil painting with her blood and ashes. 
+You feel sick to your stomach and feel the sudden urge to vomit. It's repulsing. You can't believe that just came out 
+of you.", "Face it, no one is going to enjoy reading this smut. It's time to give yourself a breather and start on a new story,
+preferably curbing down the gore on the next go of it. As any good writer would, scrap one idea and recover another.", "And you already formed the cover:<br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0118.PNG?v=1583286204383\">"]
+requires= "gore"
+
+[storylets.psychologicaltwo]
+name= "Begin the writing process"
+description= ["Writing the first part of the book was quite therapeutic. It allowed for a release of grief and allowed
+you to heal and slowly move past the trauma from the loss.", "Another three months passed and the book was complete, running
+slightly over two hundred pages."]
+requires= "psychological" 
+
+[storylets.publisher]
+name= "Mail to Publisher"
+description= ["After having proof read the entire novel three times, you decide that you're ready to get in contact with
+a literary agent. You pay a hefty amount for his services, but you have confidence that the book will sell.",
+"A few days later, the agent calls you back and has some good news for you. He thought the book was very well
+written and said that he'll pitch it to <i>Scribner</i>, which is the publishing company for Stephen King.",
+"<i>Scribner</i> published the book in both hardcover and paperback editions, which sold through the roof. You've become a successful
+novelist and found yourself struggling with balancing school and work.", "Therefore, you drop out of college and continue
+to write new novels to meet the publishing company's quota, which also become highly successful in their own right.", "Now, you can live your best life.",
+"Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0119.PNG?v=1583286216314\">"]
+requires= "psychologicaltwo" 
+conflicts= "self-publishing"
+
+[storylets.self-publishing]
+name= "Self Publish"
+description=["You share the completed manuscript with your peers. They respond with commendable feedback, but you
+still don't have the confidence to bring it to a giant publisher like <i>Scribner</i> and hope that they
+publish it in mass market paperback.", "Instead, you decide to self-publish the book on <i>Amazon Kindle Direct
+Publishing</i>. You will receive 70% of the royalties from the book, which you priced at $3.", "After it's been out 
+for a couple months, you only make $10 in royalties. Although it's not a lot of revenue, it's a good start for yourself
+as an author. Your father would be really proud.", "Perhaps you'd write another next summer.","Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0119.PNG?v=1583286216314\">"]
+requires= "psychologicaltwo"
+conflicts= "publisher"
+
+[storylets.authoring]
+name= "Begin the writing process"
+description= ["You immediately decide to title the novel: <i>Into the Deep</i>.", "The synopsis is already starting to form in your head. An underwater
+expedition team of researchers travel to an uncolonized alien planet that is surrounded by a vast open sea. Their scanners are showing sentient
+life forms at the very bottom of the ocean floor. They develop an underwater research vessel and investigate the signs of alien life that are appearing across
+their scanners.", "The life signs turn out to be tiny worm-like parasites that infect the researchers one by one,
+causing them to go insane on the vessel, which results in devastating effects.", "You've now spent a little over a year writing it and the science fiction novel is to
+your liking."]
+requires= "science-fiction"
+
+[storylets.self-publishingtwo]
+name= "Self Publish"
+description=["You share the completed manuscript with your peers. They respond with commendable feedback, but you
+still don't have the confidence to bring it to a giant publisher like <i>Scribner</i> and hope that they
+publish it in mass market paperback.", "Instead, you decide to self-publish the book on <i>Amazon Kindle Direct
+Publishing</i>. You will receive 70% of the royalties from the book, which you priced at $3.", "After it's been out 
+for a couple months, you only make $10 in royalties. Although it's not a lot of revenue, it's a good start for yourself
+as an author. Perhaps you'd write another next summer.", "Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0124.JPG?v=1583286206644\">"]
+requires= "authoring"
+conflicts= "publishertwo"
+
+[storylets.publishertwo]
+name= "Mail to Publisher"
+description= ["After having proof read the entire novel three times, you decide that you're ready to get in contact with
+a literary agent. You pay a hefty amount for his services, but you have confidence that the book will sell.",
+"A few days later, the agent calls you back and has some good news for you. He thought the book was very well
+written and said that he'll pitch it to <i>Scribner</i>, which is the publishing company for Stephen King.",
+"<i>Scribner</i> published the book in both hardcover and paperback editions, which sold through the roof. You've become a successful
+novelist and found yourself struggling with balancing school and work.", "Therefore, you drop out of college and continue
+to write new novels to meet the publishing company's quota, which also become highly successful in their own right.", "Now, you can live your best life.", "Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0124.JPG?v=1583286206644\">"]
+requires= "authoring"
+conflicts="self-publishingtwo"
+
+[storylets.romance-fantasy]
+name="Fantasy Romance"
+description= ["Drawing inspiration from all those nights of watching all four current seasons of <i>The Outlander</i> with your
+mother, you decide to write a novel that will involve time travel and a romantic relationship between two lovers
+from separate time periods.", "The novel will begin in the present day and will follow a historian named Tristan Drew. Tristan
+will stumble upon a piece of a mythic shard dated back to Ancient Greece that will send him to the mythical
+land of Troy, which is amidst a civil war. There, he'll meet none other than Helen of Troy, her sheer beauty tantalizes him and they eventually
+fall in love, which may turn the course of the war."]
+requires="romance"
+conflicts= "romantic-comedy"
+
+[storylets.romantic-comedy]
+name="Romantic Comedy"
+description= ["Taking inspiration from tropes you've seen in movies like <i>About Time</i>, <i>Love, Actually</i>, and any Adam Sandler film,
+you decide to write a romantic comedy novel that plays on some of those tropes without it becoming too much of a 
+cliche.", "You also recall a story that a friend told you regarding an awkward romantic moment he had, which you feel can play into 
+your own story. He was meeting up with an old high school acquaintance, who brought some party favors in the form of edible THC. They
+took 25 mg each, which is quite a lot. As they waited for the edibles to kick in and take effect, the girl told him that she had a giant crush
+on him in high school. He told her that the feeling was mutual, but he just never had the courage to tell her.
+She then asked him to touch her, in a sensual way. Under the influence, he took it literally and poked her on the shoulder, evoking a giggle out 
+of her. And you think that is gold.","You want to title this novel: <i>Awkward Moments When You're in Love</i>."]
+conflicts="romance-fantasy"
+requires= "romance"
+
+[storylets.rcomedytwo]
+name= "Write the novel"
+description= ["The novel took longer to write than you originally anticipated. It was almost two years before the book finally hit the 
+shelves of local book stores. However, it was short-lived.", "Your friend caught wind of your novel and decided to file a defamation
+lawsuit against you. You were discredited as a writer and were forced to pay your friend all the earnings you profited from the 
+book. Not only did you lose a friend, but your entire career aspiration of being a successful novelist. You vow never to write again.", "Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0117.PNG?v=1583286225353\">"]
+requires= "romantic-comedy"
+
+[storylets.fantasy]
+name= "Begin the writing process"
+description=["You channel your inner Diana Gabaldon and Stephanie Meyer and begin typing the manuscript for
+a book that you will call <i>Tristan of Troy</i>.", "The novel is coming along smoothly and you are very invested 
+into the story. The first draft is already complete by the time your mother comes home from work. You tell her a brief
+synopsis of what you had just wrote and ask that she proof-read it for you.", "She gives you an encouraging nod."]
+requires="romance-fantasy"
+
+[storylets.mother]
+name="Have your mother read the manuscript"
+description=["After a couple of hours, your mother finished reading your fantasy romance novel and gave you a giant
+hug. She was enthralled with the novel and told you that she'd like some copies for some of the other women in her
+book club. You blush and decide that a story like this best be kept among your mother and her small inner circle of
+friends. It's certainly not a book you want to be known for. Perhaps, you might consider a different genre. Romance
+just isn't working for you.", "Here is a copy of your book: <br><img src=\"https://cdn.glitch.com/555cc866-0009-42b4-bbed-b7f74449b4a0%2FIMG_0128.JPG?v=1583286212432\">"]
+requires="fantasy"

@@ -1,0 +1,25 @@
+title = "Test: Rejoin"
+
+introduction = ["In this test story, the player can continue by satisfing any of several alternative requirements. This story also tests support for multi-chunk introductions and multi-chunk descriptions. There is only one end to the story.",
+  "<i>Welcome to CyberBurger, may I take your order?</i>"]
+  
+[storylets.meat]
+name = "Meat"
+conflicts = "done"
+description = "One order of ᴄʜɪᴄᴋᴇɴ+, please."
+
+[storylets.veg]
+name = "Veg"
+conflicts = "done"
+description = "I'll take a dose of sparkling algae."
+
+[storylets.starch]
+name = "Starch"
+conflicts = "done"
+description = "The usual ration of amylose, for sure."
+
+[storylets.done]
+name = "Done ordering"
+requires = [["meat"],["veg"],["starch"]]
+description = ["And, uhhhhhhhhhh, and no utensils.",
+  "Yeah, that's it. (story ends here)"]
