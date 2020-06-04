@@ -1,0 +1,17 @@
+title = "Test: Chain"
+
+introduction = "In this test story, the player is presented with a linear sequence of three storylets (each that emit a single narrative chunk). Only one options should be available at a time before the end."
+
+[storylets.1]
+name = "One"
+description = "Storylet 1"
+
+[storylets.2]
+name = "Two"
+description = "Storylet 2"
+requires = "1"
+
+[storylets.3]
+name = "Three"
+description = "Storylet 3 (this is the last one)"
+requires = "2"

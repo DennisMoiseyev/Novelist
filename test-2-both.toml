@@ -1,0 +1,18 @@
+title = "Test: Both"
+
+introduction = "In this test story, the player must select two storylets (in either order) before a third becomes available."
+
+[storylets.eggs]
+name = "Green eggs"
+description = "You cook up some green eggs. You wonder where this is leading."
+
+[storylets.ham]
+name = "Ham"
+description = "You cook up some ham. The package said \"precooked,\" but for some reason you cooked it again anyway. Just to be sure."
+
+[storylets.doctor]
+name = "Green Eggs and Ham"
+description = "Ohhhh, <a href=\"https://en.wikipedia.org/wiki/Green_Eggs_and_Ham\">Green Eggs and Ham</a>; just what the doctor ordered. (story ends here)"
+requires = ["eggs", "ham"]
+
+

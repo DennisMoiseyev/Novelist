@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Niconne|Coming+Soon|Rancho|The+Girl+Next+Door|Julee|Economica|Lacquer|Tangerine|Wire+One&display=swap");
+
+#titleContainer {
+  font-family: "Economica", serif;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+  background: #F5F5F5;
+  margin: 0ex;
+  margin-bottom: 0ex;
+  border-radius: 0ex;
+  margin-right: -100%;
+  max-width: 293.5%;
+  margin-left: 90%;
+}
+
+#storyContainer p {
+  font-family: "Coming Soon", serif;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  padding: 0.5em;
+  border-radius: 0ex;
+  background: #F5F5F5;
+  margin: 0ex;
+  margin-bottom: 0ex;
+  animation: expand 0.3s ease-out;
+  hyphens: auto;
+  top: 50%;
+  left: 50%;
+  max-width: 290%;
+  margin-right: -100%;
+  margin-left: 90%;
+  #transform: translate(-50%, -50%);
+}
+
+#storyContainer img {
+  margin-top: 1ex;
+  max-width: 66%;
+  height: auto;
+  size: small;
+  border-radius: 4px;
+  margin-right: -200%;
+}
+
+#choicesContainer button {
+  border-radius: 0ex;
+  background: #DCDCDCDC;
+  transition: 0.2s;
+  margin-right: -86%;
+  margin-left: 90%;
+  margin-top: 0ex;
+  font-family: "Coming Soon", serif;
+  font-size: large;
+  font-weight: bold;
+  animation: expand 0.6s ease-in-out;
+}
+
+#choicesContainer button:hover {
+  background: #BDB76B;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+body {
+  max-width: 32em;
+  margin-bottom: 2em;
+  background-color: #F8F8FF;
+}
+
